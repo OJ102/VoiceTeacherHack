@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header class="top">
+            <span class="brand">Tutor</span>
+            <nav class="phases">
+                <span class="phase active" data-phase="probe">Probe</span>
+                <span class="phase" data-phase="plan">Plan</span>
+                <span class="phase" data-phase="teach">Teach</span>
+            </nav>
+            <span id="connection-status" class="conn" title="Disconnected"></span>
+        </header>
+
+        <section class="stage">
+            <button id="talk-btn" class="orb" aria-label="Start conversation">
+                <span class="orb-ring"></span>
+                <span class="orb-core"></span>
+            </button>
+            <p id="voice-state" class="state">Tap to start</p>
+            <p id="emotion-text" class="mood"></p>
+        </section>
+
+        <section id="plan-panel" class="plan" hidden>
+            <h2>Plan</h2>
+            <ol id="plan-list"></ol>
+        </section>
+
+        <section id="messages" class="log"></section>
+
+        <div id="options" class="options"></div>
+
+        <form id="composer" class="composer">
+            <input id="student-input" type="text" placeholder="Type instead…" autocomplete="off">
+            <button id="send-text" type="submit">Send</button>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+websockets
+pydantic
+python-dotenv==1.0.0
+tavily-python==0.3.4
+openai>=1.50
+gtts==2.4.0
+plivo==4.20.0
+pydub==0.25.1
+httpx
